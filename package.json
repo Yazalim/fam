@@ -1,6 +1,13 @@
 {
   "name": "fam",
   "description": "Football And Manager",
+  "contributors": [
+	{
+		"name": "Yasin"
+	},{
+		"name": "Selcuk"
+	}
+  ],
   "version": "0.0.1",
   "private": true,
   "dependencies": {
