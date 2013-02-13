@@ -6,10 +6,12 @@ What you need is (for now):
 ###### Client:
 * Twitter Bootstrap http://twitter.github.com/bootstrap
 * jQuery http://jquery.com
+
 ###### Middleware:
 * Node.js http://nodejs.org/
 * Express.js http://expressjs.com/
 * Mongoose http://mongoosejs.com
+
 ###### Database:
 * MongoDB http://www.mongodb.org/
 
