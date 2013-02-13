@@ -1,17 +1,16 @@
-FOOTBALL AND MANAGER
-
+# FOOTBALL AND MANAGER
 
 We are looking for managers. This is a web based football manager game.
 
 What you need is (for now):
-<b>Client:</b>
+###### Client:
 * Twitter Bootstrap http://twitter.github.com/bootstrap
 * jQuery http://jquery.com
-<b>Middleware:</b>
+###### Middleware:
 * Node.js http://nodejs.org/
 * Express.js http://expressjs.com/
 * Mongoose http://mongoosejs.com
-<b>Database:</b>
+###### Database:
 * MongoDB http://www.mongodb.org/
 
 Good points to read for beginning all these stuff:
