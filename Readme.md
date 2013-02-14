@@ -6,6 +6,7 @@ What you need is (for now):
 ###### Client:
 * Twitter Bootstrap http://twitter.github.com/bootstrap
 * jQuery http://jquery.com
+* jQuery Desktop http://github.com/nathansmith/jQuery-Desktop
 
 ###### Middleware:
 * Node.js http://nodejs.org/
