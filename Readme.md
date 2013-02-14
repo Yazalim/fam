@@ -15,7 +15,12 @@ What you need is (for now):
 ###### Database:
 * MongoDB http://www.mongodb.org/
 
-Good points to read for beginning all these stuff:
+### To Start
+
+- Make sure you have installed MongoDB, NodeJS and NPM
+- After cloning the project, don't forget installing NodeJS Modules by running this command: <code>npm install</code>
+
+### Good points to read for beginning all these stuff:
 
 - Bootstrap: http://twitter.github.com/bootstrap
 Good stuff for responsive and easy design even for non designers like us. You only specify the grids and put things into these containers of the grids.
