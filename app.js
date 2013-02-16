@@ -2,6 +2,18 @@ var express = require('express'),
 	fs = require('fs'),
 	app = express();
 
+var store = new express.session.MemoryStore;
+app.configure(function(){
+	app.use(express.bodyParser());
+	app.use(express.cookieParser());
+	app.use(express.session({
+		secret: 'famfamfam',
+		store: store
+	}));
+
+	app.use(app.router);
+});
+
 
 function checkAuth(req, res, next) {
 	if (!req.session.user_id) {
@@ -10,6 +22,13 @@ function checkAuth(req, res, next) {
 		next();
 	}
 }
+
+app.get('/*', function(req, res, next){
+	if(typeof req.cookies['connect.sid'] !== 'undefined'){
+		console.log(req.cookies['connect.sid']);
+	}
+	next();
+});
 
 app.get('/game/*', checkAuth, function (req, res) {
   res.send('if you are viewing this page it means you are logged in');
@@ -28,9 +47,9 @@ app.get('/', function(req, res){
 });
 
 app.post('/signin.sy', function(req, res){
-	console.log(req.params);
-	var post = req.params;
-	if (post.user == 'yasin' && post.pass == 'sifre') {
+	console.log(req.body);
+	var post = req.body;
+	if (post.username == 'demo' && post.password == 'demo') {
 		req.session.user_id = 1;
 		res.writeHead(200, {'Content-Type': 'text/json'});
 		res.end(JSON.stringify({"location" : "dashboard.html"}));
