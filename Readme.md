@@ -27,6 +27,7 @@ What you need is (for now):
 Good stuff for responsive and easy design even for non designers like us. You only specify the grids and put things into these containers of the grids.
 - fs.readFile(filename) lets you read the files on your file system. so you can serve static files like html, css and js (for client-side) : http://nodejs.org/api/fs.html#fs_fs_readfile_filename_encoding_callback
 - spin.js http://fgnass.github.com/spin.js/
+- Sessions on Express.js http://stackoverflow.com/a/11585839/169534
 
 Something we used but not used anymore:
 
