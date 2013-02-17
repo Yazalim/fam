@@ -28,7 +28,7 @@
 
   </style>
 </head>
-<body>
+<body><img id="wallpaper" class="bg" />
   <div class="container-fluid">
     <div class="row-fluid">&nbsp;</div>
     <div class="row-fluid">
@@ -82,7 +82,16 @@
   <script src="/js/spin.min.js"></script>
   <script type="text/javascript">
 
-  $('body').prepend('<img id="wallpaper" class="bg" src="/img/misc/background.jpg" />');
+  //$('body').prepend('');
+
+  $(function () {
+    var img = new Image();
+    $(img).load(function () {
+      $(this).hide();
+      $('#wallpaper').append(this);
+      $(this).fadeIn('slow');
+    }).attr('src', '/img/misc/background.jpg');
+  });
 
   function tryLogin(){
     var target = document.getElementById('spinner');
