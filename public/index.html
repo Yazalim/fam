@@ -93,6 +93,13 @@
     }).attr('src', '/img/misc/background.jpg');
   });
 
+  $("input").keypress(function(event) {
+    if (event.which == 13) {
+      event.preventDefault();
+      tryLogin();
+    }
+  });
+
   function tryLogin(){
     var target = document.getElementById('spinner');
     var spinner = new Spinner().spin(target);
@@ -114,7 +121,7 @@
           window.location = data.location;
         },
         500: function() {
-          alert('Not implemented yet');
+          alert('There is something wrong on the server...');
         },
         401: function() {
           spinner.stop();
