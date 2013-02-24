@@ -35,5 +35,4 @@ Something we used but not used anymore:
 Bootstrap is good for responsive design but I don't know if it supports ajax natively. So I looked up and I found this. This plugin takes the 'form' element and stops the synchronous request. Then makes the request asynch type ajax. You only need to define form class as "form ajax"
 - proces.cwd() gives you "Current Working Directory" (cwd) : http://nodejs.org/api/process.html#process_process_cwd
 - url.parse(urlStr) parses the url so you can easily get the path and filenames on this url : http://nodejs.org/api/url.html#url_url_parse_urlstr_parsequerystring_slashesdenotehost
-- path.join() I don't know what makes this handy or useful. I used it just because of the Next Point : http://nodejs.org/api/path.html#path_path_join_path1_path2
-- (Next Point) static server; if we have a nodejs application, we can use it as a static file server too. Someone did it pretty so I got what dropped to my "pay" : https://gist.github.com/701407
+- path.join() I don't know what makes this handy or useful. I used it just because of the need of static page serving : http://nodejs.org/api/path.html#path_path_join_path1_path2
